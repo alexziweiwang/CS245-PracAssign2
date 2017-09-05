@@ -4,6 +4,10 @@ package edu.usfca.cs.cs245;
 import java.util.Random;
 
 
+/**
+ *Class Practice2Test
+ *Test run rime difference between search algorithms
+ */
 public class Practice2Test {
 	
 	protected final int    DEFAULT_ARRAY_SIZE = 5000;
@@ -15,6 +19,11 @@ public class Practice2Test {
 	protected String searchType;
 	
 	
+	/**
+	 * Receive arguments from Run Configurations and form a random array
+	 * @param args
+	 * 		Takes
+	 */
 	public Practice2Test(String [] args) {
 		int arraySize = DEFAULT_ARRAY_SIZE;
 		searches = DEFAULT_SEARCHES;
@@ -41,9 +50,14 @@ public class Practice2Test {
 		System.out.println("Search type = " + searchType);
 		
 		fillArray();
+		
+
 	}
 	
 	
+	/**
+	 * Introduction of input sequence of arguments
+	 */
 	public void usage() {
 		System.out.println("Usage:");
 		System.out.println("* Argument 1 = Array size.");
@@ -53,6 +67,12 @@ public class Practice2Test {
 	}
 
 
+	
+	/**
+	 * Fill array with random numbers
+	 * @return
+	 * 			true if filled array successfully
+	 */
 	public boolean fillArray () {
 		Random rand = new Random();
 		int stepSize = Integer.MAX_VALUE / (arr.length * 2);
@@ -70,7 +90,9 @@ public class Practice2Test {
 		return true;
 	}
 	
-	
+	/**
+	 * Record time duration of search
+	 */
 	public void timeSearches() {
 		Practice2Factory factory = new Practice2Factory();
 		Practice2Search search = factory.getSearch(searchType);
