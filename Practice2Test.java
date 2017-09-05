@@ -91,7 +91,7 @@ public class Practice2Test {
 	}
 	
 	/**
-	 * Record time duration of search
+	 * Record and print time duration of search
 	 */
 	public void timeSearches() {
 		Practice2Factory factory = new Practice2Factory();
@@ -109,7 +109,11 @@ public class Practice2Test {
 		System.out.println(search.searchName() + ": total search time = " + totalTime + "ms. Average search time = " + (float)totalTime / (float)arr.length + "ms.");
 	}
 	
-
+	/**
+	 * Main method
+	 * @param args
+	 * 		three arguments for size of array, number of searches and search type
+	 */
 	public static void main(String[] args) {
 		Practice2Test test = new Practice2Test(args);
 		test.timeSearches();

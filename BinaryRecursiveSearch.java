@@ -17,7 +17,7 @@ public class BinaryRecursiveSearch implements Practice2Search {
 	}
 
 	/**
-	 * Search integer in an array of integer with binary search by calling
+	 * Search integer in an array of integer, with binary search by calling
 	 * private method in recursion
 	 */
 	@Override

@@ -20,7 +20,7 @@ public class LinearSearch implements Practice2Search {
 
 	
 	/**
-	 * Search integer in an array of integer with linear search
+	 * Search integer in an array of integer, with linear search
 	 */
 	@Override
 	public int search(int[] arr, int target) {

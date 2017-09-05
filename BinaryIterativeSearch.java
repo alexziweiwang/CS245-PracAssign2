@@ -17,18 +17,18 @@ public class BinaryIterativeSearch implements Practice2Search {
 	}
 
 	/**
-	 * Search integer in an array of integer with binary search by iteration
+	 * Search integer in an array of integer, with binary search by iteration
 	 */
 	@Override
 	public int search(int[] arr, int target) {
 
-		int min = 0;
+		int min = 0;				
 		int max = arr.length - 1;
 		int mid;
 
 		while (target < max && min <= max) {
 
-			mid = (max - min) / 2;
+			mid = (max - min) / 2; 
 
 			if (arr[mid] == target) {
 				return mid;
