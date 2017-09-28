@@ -1,4 +1,4 @@
-package edu.usfca.cs.cs245;
+//package edu.usfca.cs.cs245;
 
 /**
  * BinaryRecursiveSearch.java
@@ -46,9 +46,23 @@ public class BinaryRecursiveSearch implements Practice2Search {
 	
 		int mid = (min + max) / 2;
 
+		/*
+		This will cause the same fail as in the iterative binary search.
+		*/
 		if (min > max || target > max) {
 			return -1;
 		}
+		/*
+		Generally, conditionals with connected logic should be connected like so:
+
+		if (...) {
+			...
+		} else if (...) {
+			...	
+ 		} else {
+			...
+ 		}
+ 		*/
 
 		if (arr[mid] == target) {
 			return mid;

@@ -1,4 +1,4 @@
-package edu.usfca.cs.cs245;
+//package edu.usfca.cs.cs245;
 
 /**
  * BinaryIterativeSearch.java
@@ -26,6 +26,10 @@ public class BinaryIterativeSearch implements Practice2Search {
 		int max = arr.length - 1;
 		int mid;
 
+		/*
+		This added part about target being less than max is unnecessary and actually will cause a fail
+		if you ever want to search for an integer that's higher than the max size of the array.
+		*/
 		while (target < max && min <= max) {
 
 			mid = (max - min) / 2; 
